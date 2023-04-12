@@ -1,0 +1,8 @@
+$colorBack: rgb(106, 114, 228);
+$border: 2px solid rgb(0, 128, 128);
+
+.header {
+   grid-area: header;
+   background-color: $colorBack;
+   border: $border;
+}

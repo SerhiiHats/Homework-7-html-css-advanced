@@ -1,0 +1,8 @@
+$colorBack: rgb(90, 180, 207);
+$border: 2px solid rgb(84, 143, 87);
+
+.nav {
+   grid-area: nav;
+   background-color: $colorBack;
+   border: $border;
+}

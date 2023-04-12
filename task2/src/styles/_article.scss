@@ -1,0 +1,10 @@
+$colorBack: rgb(190, 191, 196);
+$border: 2px solid rgb(142, 156, 89);
+$color: black;
+
+.article {
+   grid-area: article;
+   background-color: $colorBack;
+   border: $border;
+   color: $color;
+}

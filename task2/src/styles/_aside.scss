@@ -1,0 +1,8 @@
+$colorBack: rgb(241, 147, 224);
+$border: 2px solid rgb(84, 139, 143);
+
+.aside {
+   grid-area: aside;
+   background-color: $colorBack;
+   border: $border;
+}

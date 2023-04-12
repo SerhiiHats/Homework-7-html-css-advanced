@@ -1,0 +1,8 @@
+$colorBack: rgb(223, 199, 169);
+$border: 1px solid green;
+
+.footer {
+   grid-area: footer;
+   background-color: $colorBack;
+   border: $border;
+}
