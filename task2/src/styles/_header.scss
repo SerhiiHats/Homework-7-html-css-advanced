@@ -1,8 +1,77 @@
 $colorBack: rgb(106, 114, 228);
 $border: 2px solid rgb(0, 128, 128);
+$borderWhite: 2px solid rgb(245, 247, 247);
+$colorLogo: white;
+$spacing: 3px;
+
 
 .header {
    grid-area: header;
    background-color: $colorBack;
    border: $border;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   & .wrap-logo {
+      padding: $spacing*3;
+
+      & .logo {
+         font-family: 'Great Vibes', cursive;
+         font-size: 71px;
+         color: $colorLogo;
+      }
+
+      & .label {
+         font-size: 18px;
+         font-family: 'Poppins', sans-serif;
+         color: $colorLogo;
+         letter-spacing: $spacing *3;
+         word-spacing: $spacing*4;
+         margin: $spacing*14;
+      }
+   }
+
+   .social-group {
+      display: flex;
+      padding-right: $spacing*4;
+
+      &>p {
+         font-size: 20px;
+         margin: 12px 5px 0 0;
+         color: $colorLogo;
+      }
+
+      &>.social {
+         width: 50px;
+         height: 50px;
+         background-image: url("/src/images/header_socials.png");
+         background-repeat: no-repeat;
+         margin: 0 $spacing;
+      }
+
+      &>.social:nth-child(2) {
+         background-position: 7px 7px;
+      }
+
+      &>.social:nth-child(2):hover {
+         background-position: 7px -62px;
+      }
+
+      &>.social:nth-child(3) {
+         background-position: 7px -148px;
+      }
+
+      &>.social:nth-child(3):hover {
+         background-position: 7px -239px;
+      }
+
+      &>.social:nth-child(4) {
+         background-position: 7px -443px;
+      }
+
+      &>.social:nth-child(4):hover {
+         background-position: 7px -348px;
+      }
+   }
 }

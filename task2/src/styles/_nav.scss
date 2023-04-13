@@ -1,8 +1,31 @@
 $colorBack: rgb(90, 180, 207);
 $border: 2px solid rgb(84, 143, 87);
+$borderG: 1px solid lightgrey;
+$widthNav: 14%;
+$colorW: white;
+$colorR: red;
+$padding: 2px;
 
 .nav {
-   grid-area: nav;
+   width: $widthNav;
    background-color: $colorBack;
    border: $border;
+
+   ul,
+   li {
+      list-style: none;
+      user-select: none;
+      padding: $padding;
+      color: $colorR;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+   }
+
+   & li:hover {
+      border: $borderG;
+      background-color: darken($colorBack, $amount: 7%);
+      color: $colorW;
+      box-shadow: 0 0 7px 2px lightgray;
+      padding: $padding - 1;
+   }
 }

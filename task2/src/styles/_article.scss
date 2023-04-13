@@ -1,10 +1,19 @@
 $colorBack: rgb(190, 191, 196);
 $border: 2px solid rgb(142, 156, 89);
-$color: black;
+$colorB: black;
+$colorG: green;
+$widthArticle: 68%;
+$size:7px;
 
 .article {
-   grid-area: article;
+   width: $widthArticle;
    background-color: $colorBack;
    border: $border;
-   color: $color;
+   color: $colorB;
+   padding: $size;
+
+   & h2{
+      padding:  $size 0;
+      color: lighten($colorG, $amount: 5%);
+   }
 }

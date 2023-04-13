@@ -9,19 +9,15 @@
 @import "aside";
 @import "footer";
 
-// @import 'scaffolding';
 
 #root {
-  // max-width: 1480px;
+  max-width: 1480px;
   margin: auto;
   border: 1px solid tomato;
-  // height: 700px;
-  // display: grid;
-  // grid-template-columns: 200px 1fr 200px;
-  // grid-template-rows: 150px 1fr 150px;
-  // grid-template-areas:
-  //   "nav" "header" "header"
-  //   "nav" "article" "aside"
-  //   "nav" "footer" "footer";
-  // gap: 10px;
+ 
+  .main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }

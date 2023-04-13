@@ -5,6 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <title>
     <%= htmlWebpackPlugin.options.title %>
@@ -13,20 +17,64 @@
 
 <body>
   <div id="root">
-    <header class="header">header</header>
-    <nav class="nav">nav</nav>
-    <article class="article">
-      <h2>Завдання 2</h2>
-      <p>
-        Створіть сторінку за допомогою тегів HTML5 – header, footer, article, aside, nav. Виконайте оформлення стилів
-        основного блоку контейнера у файлі main.scss. Стилі для інших блоків – підключіть за допомогою @import. У стилях
-        кожного блоку сторінки має бути:</p>
-      <p>- мінімум 3 змінних;</p>
-      <p>- mixin для кросс-браузерної верстки браузерів;</p>
-      <p>- змішування кольорів.</p>
-    </article>
-    <aside class="aside">aside</aside>
-    <footer class="footer">footer</footer>
+    <header class="header">
+      <div class="wrap-logo">
+        <div class="logo">Sassy CSS</div>
+        <span class="label">samply page</span>
+      </div>
+
+      <div class="social-group">
+        <p>Мы в соцсетях: </p>
+        <div class="social"></div>
+        <div class="social"></div>
+        <div class="social"></div>
+      </div>
+    </header>
+
+    <div class="main">
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu-sub">Топ</li>
+          <li class="menu-sub">Материалы</li>
+          <li class="menu-sub">Регионы</li>
+          <li class="menu-sub">Рубрики</li>
+          <li class="menu-sub">Статьи</li>
+          <li class="menu-sub">Блоги</li>
+          <li class="menu-sub">Архив</li>
+        </ul>
+      </nav>
+
+      <article class="article">
+        <h2>Завдання 2</h2>
+        <p>
+          Створіть сторінку за допомогою тегів HTML5 – header, footer, article, aside, nav. Виконайте оформлення стилів
+          основного блоку контейнера у файлі main.scss. Стилі для інших блоків – підключіть за допомогою @import. У
+          стилях
+          кожного блоку сторінки має бути:</p>
+        <p>- мінімум 3 змінних;</p>
+        <p>- mixin для кросс-браузерної верстки браузерів;</p>
+        <p>- змішування кольорів.</p>
+        <h2>Завдання 3</h2>
+        <p>
+          Створіть сторінку новин, використовуючи header, nav, article, footer. Виконайте оформлення стилів основного
+          блоку контейнера у файлі main.scss. Стилі для інших блоків – підключіть за допомогою @import. У стилях кожного
+          блоку сторінки – має бути мінімум 2 змінні та цикл, а решта властивостей scss на Ваш розсуд.</p>
+      </article>
+
+      <aside class="aside">
+        <p>Авторизация</p>
+        <p>Регистрация</p>        
+        <label for="name">Имя:</label>
+        <input id="name" type="text">
+        <label for="com">написать нам:</label>
+        <textarea name="comment" id="com" cols="25" rows="10"></textarea>
+        <p>Отправить</p>
+        
+      </aside>
+
+    </div>
+
+    <footer class="footer"><small> © Design by Serhii Hats</small></footer>
   </div>
 </body>
 

@@ -1,8 +1,53 @@
 $colorBack: rgb(241, 147, 224);
 $border: 2px solid rgb(84, 139, 143);
+$widthAside: 16%;
+$padding: 10px;
+$colorW: white;
+$colorB: black;
+$colorG: lightGrey;
+$size: 20px;
+
 
 .aside {
-   grid-area: aside;
+   width: $widthAside;
    background-color: $colorBack;
    border: $border;
+   padding-left: $padding;
+
+   & p {
+      padding: $padding;
+      color: $colorW;
+      font-size: $padding*1.8;
+      transition: 0.2s;
+   }
+
+   & p:hover {
+      padding: $padding;
+      color: $colorW;
+      font-size: $padding*1.8;
+      background-color: $colorG;
+      color: $colorB;
+   }
+
+   & #name,
+   & #com {
+     display: block;
+     margin-bottom: $size * 0.5;
+   }
+
+   & p:last-child {
+      width: 150px;
+      padding: $padding;
+      color: $colorB;
+      font-size: $padding*1.8;
+      text-align: center;
+      margin: $size *0.5 $size;
+      border-radius: 5px;
+      background-color: $colorG;
+   }
+
+   & p:last-child:hover {
+      background-color: darken($colorG, $amount: 15%);
+      box-shadow: 0 0 7px 2px lightgray;
+   }
 }

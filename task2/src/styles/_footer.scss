@@ -1,8 +1,20 @@
-$colorBack: rgb(223, 199, 169);
+$colorBack: #e9bf8d;
 $border: 1px solid green;
+$color: #ffffff;
+$size: 18px;
 
 .footer {
+   min-height: 150px;
    grid-area: footer;
    background-color: $colorBack;
    border: $border;
+   color: $color;   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   small{
+      font-size: $size;
+      color: $color;
+   }
 }
