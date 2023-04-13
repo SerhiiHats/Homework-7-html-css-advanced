@@ -9,13 +9,11 @@
 @import "aside";
 @import "footer";
 
-
 #root {
   max-width: 1480px;
   margin: auto;
-  border: 1px solid tomato;
- 
-  .main{
+
+  .main {
     width: 100%;
     display: flex;
     justify-content: space-between;

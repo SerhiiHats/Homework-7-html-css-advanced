@@ -1,31 +1,32 @@
-$colorBack: rgb(90, 180, 207);
-$border: 2px solid rgb(84, 143, 87);
-$borderG: 1px solid lightgrey;
+$colorNavBackground: rgb(90, 180, 207);
+$borderNavGreen: 2px solid rgb(84, 143, 87);
+$borderNavGrey: 1px solid lightgrey;
 $widthNav: 14%;
-$colorW: white;
-$colorR: red;
-$padding: 2px;
+$colorNavW: white;
+$colorNavR: red;
+$sizeNav: 2px;
+$fontweight: 600;
 
 .nav {
    width: $widthNav;
-   background-color: $colorBack;
-   border: $border;
+   background-color: $colorNavBackground;
+   border: $borderNavGreen;
 
    ul,
    li {
       list-style: none;
       user-select: none;
-      padding: $padding;
-      color: $colorR;
-      font-weight: 600;
-      font-family: 'Poppins', sans-serif;
+      padding: $sizeNav;
+      color: $colorNavR;
+      font-weight: $fontweight;
+      font-family: "Poppins", sans-serif;
    }
 
-   & li:hover {
-      border: $borderG;
-      background-color: darken($colorBack, $amount: 7%);
-      color: $colorW;
-      box-shadow: 0 0 7px 2px lightgray;
-      padding: $padding - 1;
+   li:hover {
+      border: $borderNavGrey;
+      background-color: darken($colorNavBackground, $amount: 7%);
+      color: $colorNavW;
+      box-shadow: 0 0 $sizeNav * 3 $sizeNav lightgray;
+      padding: $sizeNav - 1;
    }
 }

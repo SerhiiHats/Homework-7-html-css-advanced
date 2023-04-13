@@ -1,20 +1,20 @@
-$colorBack: #e9bf8d;
+$colorFooterBackground: #e9bf8d;
 $border: 1px solid green;
-$color: #ffffff;
-$size: 18px;
+$colorFooter: #ffffff;
+$sizeFooter: 18px;
+$centerFooter: center;
+$flexFooter: flex;
 
 .footer {
-   min-height: 150px;
-   grid-area: footer;
-   background-color: $colorBack;
+   min-height: $sizeFooter * 7;
+   background-color: $colorFooterBackground;
    border: $border;
-   color: $color;   
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   color: $colorFooter;
+   display: $flexFooter;
+   align-items: $centerFooter;
+   justify-content: $centerFooter;
 
-   small{
-      font-size: $size;
-      color: $color;
+   small {
+      font-size: $sizeFooter;
    }
 }

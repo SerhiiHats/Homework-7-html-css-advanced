@@ -1,19 +1,23 @@
-$colorBack: rgb(190, 191, 196);
-$border: 2px solid rgb(142, 156, 89);
-$colorB: black;
-$colorG: green;
+$colorArticleBackground: rgb(190, 191, 196);
+$borderArticleG: 2px solid rgb(142, 156, 89);
+$colorArticleB: black;
+$colorArticleG: green;
 $widthArticle: 68%;
-$size:7px;
+$sizeArticle: 7px;
 
 .article {
    width: $widthArticle;
-   background-color: $colorBack;
-   border: $border;
-   color: $colorB;
-   padding: $size;
+   background-color: $colorArticleBackground;
+   border: $borderArticleG;
+   color: $colorArticleB;
+   padding: $sizeArticle;
 
-   & h2{
-      padding:  $size 0;
-      color: lighten($colorG, $amount: 5%);
+   & h2 {
+      padding: $sizeArticle 0;
+      color: lighten($colorArticleG, $amount: 5%);
+   }
+
+   p {
+      font-size: $sizeArticle * 2.7;
    }
 }

@@ -1,77 +1,78 @@
-$colorBack: rgb(106, 114, 228);
-$border: 2px solid rgb(0, 128, 128);
-$borderWhite: 2px solid rgb(245, 247, 247);
-$colorLogo: white;
-$spacing: 3px;
-
+$colorHeadBackground: rgb(106, 114, 228);
+$borderHeadG: 2px solid rgb(0, 128, 128);
+$colorHeadLogo: white;
+$sizeHeader: 3px;
+$flex: flex;
+$spaceBetween: space-between;
+$center: center;
 
 .header {
    grid-area: header;
-   background-color: $colorBack;
-   border: $border;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   background-color: $colorHeadBackground;
+   border: $borderHeadG;
+   display: $flex;
+   justify-content: $spaceBetween;
+   align-items: $center;
 
-   & .wrap-logo {
-      padding: $spacing*3;
+   .wrap-logo {
+      padding: $sizeHeader * 3;
 
-      & .logo {
-         font-family: 'Great Vibes', cursive;
-         font-size: 71px;
-         color: $colorLogo;
+      .logo {
+         font-family: "Great Vibes", cursive;
+         font-size: $sizeHeader * 22;
+         color: $colorHeadLogo;
       }
 
-      & .label {
-         font-size: 18px;
-         font-family: 'Poppins', sans-serif;
-         color: $colorLogo;
-         letter-spacing: $spacing *3;
-         word-spacing: $spacing*4;
-         margin: $spacing*14;
+      .label {
+         font-size: $sizeHeader * 6;
+         font-family: "Poppins", sans-serif;
+         color: $colorHeadLogo;
+         letter-spacing: $sizeHeader * 3;
+         word-spacing: $sizeHeader * 4;
+         margin: $sizeHeader * 14;
       }
    }
 
    .social-group {
       display: flex;
-      padding-right: $spacing*4;
+      padding-right: $sizeHeader * 4;
 
-      &>p {
-         font-size: 20px;
-         margin: 12px 5px 0 0;
-         color: $colorLogo;
+      > p {
+         font-size: $sizeHeader * 6.5;
+         margin: $sizeHeader * 4 $sizeHeader * 2 0 0;
+         color: $colorHeadLogo;
       }
 
-      &>.social {
-         width: 50px;
-         height: 50px;
+      > .social {
+         width: $sizeHeader * 17;
+         height: $sizeHeader * 17;
          background-image: url("/src/images/header_socials.png");
          background-repeat: no-repeat;
-         margin: 0 $spacing;
+         margin: 0 $sizeHeader;
       }
 
-      &>.social:nth-child(2) {
+      > .social:nth-child(2) {
          background-position: 7px 7px;
+
+         &:hover {
+            background-position: 7px -62px;
+         }
       }
 
-      &>.social:nth-child(2):hover {
-         background-position: 7px -62px;
-      }
-
-      &>.social:nth-child(3) {
+      > .social:nth-child(3) {
          background-position: 7px -148px;
+
+         &:hover {
+            background-position: 7px -239px;
+         }
       }
 
-      &>.social:nth-child(3):hover {
-         background-position: 7px -239px;
-      }
-
-      &>.social:nth-child(4) {
+      > .social:nth-child(4) {
          background-position: 7px -443px;
-      }
 
-      &>.social:nth-child(4):hover {
-         background-position: 7px -348px;
+         &:hover {
+            background-position: 7px -348px;
+         }
       }
    }
 }
