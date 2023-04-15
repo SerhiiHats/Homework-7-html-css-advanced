@@ -1,18 +1,18 @@
 $size-width: 100%;
-$testBorder: 1px solid tomato;
 $colorHeaderW: white;
 $colorHeaderR: #d61515;
 $sizeHeader: 14px;
 
 header {
+   width: $container-width;
+   margin: auto;
+   margin-top: $sizeHeader;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-top: $sizeHeader;
 
    div {
       width: $size-width * 0.2;
-      // border: $testBorder;
 
       img {
          width: $size-width;

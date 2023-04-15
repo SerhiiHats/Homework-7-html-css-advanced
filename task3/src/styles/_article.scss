@@ -1,18 +1,19 @@
 $widthArticle: 100%;
 $heighthArticle: 15px;
 $sizehArticle: 2px;
-$testBorder: 1px solid tomato;
 $colorArticle: rgb(240, 239, 239);
 $colorArticleR: #d61515;
+$colorArticleB: black;
 $borderBottonR: 2px solid $colorArticleR;
 
 article {
+   width: $container-width;
+   margin: auto;
    .top {
       display: flex;
       justify-content: space-between;
       width: $widthArticle;
       font-family: "Poppins", sans-serif;
-      border: $testBorder;
       margin-top: $sizehArticle * 15;
       color: $colorArticle;
       font-size: $sizehArticle * 13;
@@ -37,7 +38,7 @@ article {
       .top-right {
          width: $widthArticle * 0.3;
          font-size: $sizehArticle * 10;
-         color: black;
+         color: $colorArticleB;
 
          div {
             display: flex;
@@ -46,19 +47,15 @@ article {
             margin-bottom: $sizehArticle * 10;
 
             div {
-               width: 40%;
+               width: $widthArticle * 0.4;
                height: 100%;
-               background-image: url("/src/images/item1.jpg");
                background-size: cover;
                background-repeat: no-repeat;
                aspect-ratio: 1/0.7;
+            }
 
-               &:nth-child(2) {
-                  background-image: url("/src/images/item2.jpg");
-               }
-               &:nth-child(3) {
-                  background-image: url("/src/images/item2.jpg");
-               }
+            .item1 {
+               background-image: url("/src/images/item1.jpg");
             }
             .item2 {
                background-image: url("/src/images/item2.jpg");
@@ -68,7 +65,7 @@ article {
             }
 
             p {
-               width: 56%;
+               width: $widthArticle * 0.56;
                font-size: $sizehArticle * 8;
                margin: 0;
                font-weight: bold;
@@ -81,7 +78,6 @@ article {
 
    .wrap-banner-google {
       width: $widthArticle;
-      border: $testBorder;
       margin-top: $sizehArticle * 25;
 
       img {
@@ -90,17 +86,22 @@ article {
    }
 
    .wrap-news {
-      border: $testBorder;
-      // margin-top: $sizehArticle * 10;
       display: flex;
       justify-content: space-between;
       width: $widthArticle;
 
       > div {
-         margin: $sizehArticle;
-         padding-left: $sizehArticle * 2;
          width: $widthArticle * 33;
-         border: $testBorder;
+
+         &:nth-child(2) {
+            padding-left: $sizehArticle * 5;
+            margin-left: $sizehArticle * 9;
+         }
+
+         &:nth-child(3) {
+            padding-left: $sizehArticle * 5;
+            margin-left: $sizehArticle * 9;
+         }
 
          > h4 {
             color: $colorArticleR;
@@ -138,12 +139,8 @@ article {
 
       .wrap-lat {
          .lat {
-            // font-size: 30px;
-            // width: 100%;
             > div {
-               // width: 100%;
                height: 100%;
-               // background-image: url("/src/images/lat1.jpg");
                background-size: cover;
                background-repeat: no-repeat;
                aspect-ratio: 1/0.5;
@@ -186,43 +183,30 @@ article {
       }
 
       .photo-fact {
-         // font-size: 30px;
-         // width: 100%;
          div {
-            // width: 100%;
-            // height: 100%;
-
-            // background-image: url("/src/images/lat1.jpg");
-            // background-image: url("/src/images/photo-fact1.jpeg");
             background-size: cover;
             background-repeat: no-repeat;
             aspect-ratio: 1/0.5;
+            margin-bottom: $sizehArticle * 25;
+
+            p {
+               color: $colorArticle;
+               padding: $sizehArticle * 50 $sizehArticle * 25 $sizehArticle * 25;
+               font-size: $sizehArticle * 9;
+            }
 
             &:nth-child(2) {
                background-image: url("/src/images/photo-fact1.jpg");
-               // background-size: cover;
-               // background-repeat: no-repeat;
-               // aspect-ratio: 1/0.5;
             }
-
             &:nth-child(3) {
                background-image: url("/src/images/photo-fact2.jpg");
-               // background-size: cover;
-               // background-repeat: no-repeat;
-               // aspect-ratio: 1/0.5;
             }
             &:nth-child(4) {
                background-image: url("/src/images/photo-fact3.jpg");
-               // background-size: cover;
-               // background-repeat: no-repeat;
-               // aspect-ratio: 1/0.5;
             }
 
             &:nth-child(5) {
                background-image: url("/src/images/photo-fact4.jpg");
-               // background-size: cover;
-               // background-repeat: no-repeat;
-               // aspect-ratio: 1/0.5;
             }
          }
       }

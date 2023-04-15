@@ -3,18 +3,17 @@
   src: url("../fonts/Inter.ttf");
 }
 
-@import "header";
-@import "nav";
-@import "article";
-@import "footer";
-
 $font-size: 16px;
 $font-family: "Inter", sans-serif;
 $color: #dae0e0;
-$page-width: 1480px;
+$container-width: 1480px;
 
 body {
   margin: auto;
   text-align: center;
-  max-width: $page-width;
 }
+
+@import "header";
+@import "nav";
+@import "article";
+@import "footer";

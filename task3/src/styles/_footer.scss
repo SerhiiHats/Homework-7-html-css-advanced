@@ -1,0 +1,47 @@
+$colorBackgroundFooter: #303440;
+$colorFooter: #dae0e0;
+$sizeFooter: 16px;
+
+footer {
+   background-color: $colorBackgroundFooter;
+   color: $colorFooter;
+
+   .footer-top {
+      width: $container-width;
+      margin: auto;
+      display: flex;
+      text-align: left;
+      margin-bottom: $sizeFooter * 2;
+      > div {
+         &:nth-child(1) {
+            width: 35%;
+         }
+         &:nth-child(2) {
+            width: 10%;
+         }
+         &:nth-child(3) {
+            width: 20%;
+         }
+         &:nth-child(4) {
+            width: 35%;
+         }
+         p {
+            &:first-child {
+               font-size: $sizeFooter * 1.2;
+               font-weight: bold;
+            }
+         }
+      }
+   }
+
+   .footer-bottom {
+      width: $container-width;
+      margin: auto;
+      padding: $sizeFooter * 1.2 0;
+      border-top: 1px solid $colorFooter;
+      text-align: left;
+      margin-bottom: $sizeFooter * 2;
+      font-size: $sizeFooter * 1.2;
+      font-weight: bold;
+   }
+}
