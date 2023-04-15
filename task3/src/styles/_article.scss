@@ -1,0 +1,54 @@
+$widthArticle: 100%;
+$heighthArticle: 15px;
+$sizehArticle: 2px;
+$testBorder: 1px solid tomato;
+$colorArticle: rgb(240, 239, 239);
+
+.top {
+   display: flex;
+   justify-content: space-between;
+   width: $widthArticle;
+   font-family: "Poppins", sans-serif;
+   border: $testBorder;
+   margin-top: $widthNav;
+   color: $colorArticle;
+   font-size: $sizehArticle * 13;
+
+   .top-left {
+      width: $widthArticle * 0.68;
+      height: $heighthArticle * 36;
+      background-image: url("/src/images/img_0329.jpg");
+      background-repeat: no-repeat;
+      // background-size: contain;
+      // background-size: cover;
+      border: $testBorder;
+      // background-size: auto;
+
+      background-s h3 {
+      }
+   }
+
+   .top-right {
+      // display: flex;
+      width: $widthArticle * 0.3;
+      border: $testBorder;
+      font-size: $sizehArticle * 10;
+      color: black;
+
+      div {
+         display: flex;
+
+         & > div {
+            border: $testBorder;
+            width: $heighthArticle * 11;
+            height: $heighthArticle * 11;
+
+            & > span {
+               width: 35px;
+               height: 35px;
+               border: $testBorder;
+            }
+         }
+      }
+   }
+}

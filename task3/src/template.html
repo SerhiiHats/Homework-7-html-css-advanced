@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-  <body>
-    <div id="root"></div>
-  </body>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <header>
+    <div class="block"><img src="/assets/google-web-designer-3.jpg" alt="baners"></div>
+    <div class="block">
+      <h1>INFORM.UA</h1>
+      <p>ПОРТАЛ АКТУАЛЬНИХ НОВИН</p>
+    </div>
+    <div class="block"><img src="/assets/google-web-designer-6.jpg" alt="baners"></div>
+  </header>
+
+  <nav>
+    <div class="menu-wrap">
+      <ul>
+        <li>Регіони</li>
+        <li>Рубрики</li>
+        <li>Статті</li>
+        <li>Блогі</li>
+      </ul>
+    </div>
+
+    <input type="text" name="search-pub" id="search" placeholder="Пошук...">
+
+    <div class="social-wrap">
+      <p>Ми у соцмережах: </p>
+      <div class="social"><i class="fab fa-google"></i></div>
+      <div class="social"><i class="fab fa-telegram-plane"></i>
+      </div>
+      <div class="social"><i class="fab fa-facebook-f"></i></div>
+      <div class="social"><i class="fab fa-youtube"></i></div>
+    </div>
+  </nav>
+
+  <article>
+    <div class="top">
+      <div class="top-left">
+        <h3>
+          Недовго музика грала: в Ізмаїлі заборонили використання електросамокатів, які віднедавна почали здавати в
+          оренду на вулицях міста
+        </h3>
+      </div>
+
+      <div class="top-right">
+        <div>
+          <div class="item1">
+          </div>
+          <p>Всеукраїнська Рада Церков підтримала законопроєкт про заборону релігійних...</p>
+        </div>
+
+        <div>
+          <div class="item2">
+
+          </div>
+          <p>Раніше 6 ранку в храмах робити немає чого: в Одеській області офіційно оголосили. ...</p>
+        </div>
+
+        <div>
+          <div class="item3">
+
+          </div>
+          <p>“Народився у СРСР і Україну не визнаю”: радіомеханік оборонно-промислового комплексу...</p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </article>
+
+  <footer>
+
+  </footer>
+  <script src="https://kit.fontawesome.com/36415ef25f.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

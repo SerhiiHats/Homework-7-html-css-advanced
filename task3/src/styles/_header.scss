@@ -1,0 +1,41 @@
+$size-width: 100%;
+$testBorder: 1px solid tomato;
+$colorHeaderW: white;
+$colorHeaderR: #d61515;
+$sizeHeader: 14px;
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: $sizeHeader;
+
+   div {
+      width: $size-width * 0.2;
+      // border: $testBorder;
+
+      img {
+         width: $size-width;
+      }
+
+      &:nth-child(2) {
+         text-align: center;
+         color: $colorHeaderW;
+         background-color: $colorHeaderR;
+         width: $size-width * 0.3;
+         padding: $sizeHeader * 0.5 $sizeHeader;
+
+         h1 {
+            margin: $sizeHeader 0;
+            font-size: $sizeHeader * 4;
+         }
+
+         p {
+            font-size: $sizeHeader * 1.2;
+            font-weight: bold;
+            letter-spacing: $sizeHeader * 0.1;
+            word-spacing: $sizeHeader * 0.3;
+         }
+      }
+   }
+}

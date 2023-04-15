@@ -1,0 +1,75 @@
+$colorBackgroundNav: #d61515;
+$colorNav: rgb(240, 239, 239);
+$colorNavG: grey;
+$sizeNav: 2px;
+$widthNav: 15px;
+$fontweight: 600;
+$testBorder: 1px solid tomato;
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: $colorBackgroundNav;
+   margin-top: $sizeNav * 15;
+   color: $colorNav;
+
+   .menu-wrap {
+      ul {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         list-style: none;
+         user-select: none;
+
+         font-family: "Poppins", sans-serif;
+         margin: 0;
+         padding: 0 $sizeHeader;
+         font-weight: $fontweight;
+         transition: 1s;
+
+         li {
+            padding: $sizeNav * 7;
+
+            &:hover {
+               background-color: darken($color: $colorBackgroundNav, $amount: 7%);
+            }
+         }
+      }
+   }
+
+   input {
+      width: $widthNav * 23;
+      background-color: lighten($color: $colorBackgroundNav, $amount: 15%);
+      border: none;
+      height: $sizeNav * 15;
+
+      &::placeholder {
+         color: $colorNav;
+      }
+   }
+
+   .social-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: $sizeNav * 5;
+
+      p:first-child {
+         margin-right: $sizeNav * 10;
+      }
+      div {
+         width: $widthNav * 2.2;
+         margin: $sizeNav;
+
+         i {
+            color: $colorNav;
+            font-size: $sizeNav * 10;
+
+            &:hover {
+               color: $colorNavG;
+            }
+         }
+      }
+   }
+}
