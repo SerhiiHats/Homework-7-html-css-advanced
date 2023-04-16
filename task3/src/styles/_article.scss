@@ -22,7 +22,6 @@ article {
          width: $widthArticle * 0.68;
          height: 100%;
          background-position: center;
-
          background-image: url("/src/images/img_0329.jpg");
          background-repeat: no-repeat;
          background-size: cover;
@@ -53,15 +52,10 @@ article {
                background-repeat: no-repeat;
                aspect-ratio: 1/0.7;
             }
-
-            .item1 {
-               background-image: url("/src/images/item1.jpg");
-            }
-            .item2 {
-               background-image: url("/src/images/item2.jpg");
-            }
-            .item3 {
-               background-image: url("/src/images/item3.jpg");
+            @for $j from 1 to 4 {
+               .item#{$j} {
+                  background-image: url(/src/images/item#{$j}.jpg);
+               }
             }
 
             p {
@@ -145,39 +139,10 @@ article {
                background-repeat: no-repeat;
                aspect-ratio: 1/0.5;
             }
-            &:nth-child(2) {
-               > div {
-                  background-image: url("/src/images/lat1.jpg");
-               }
-            }
-
-            &:nth-child(3) {
-               > div {
-                  background-image: url("/src/images/lat2.jpg");
-               }
-            }
-
-            &:nth-child(4) {
-               > div {
-                  background-image: url("/src/images/lat3.jpg");
-               }
-            }
-
-            &:nth-child(5) {
-               > div {
-                  background-image: url("/src/images/lat4.jpg");
-               }
-            }
-
-            &:nth-child(6) {
-               > div {
-                  background-image: url("/src/images/lat5.jpg");
-               }
-            }
-            &:nth-child(7) {
-               > div {
-                  background-image: url("/src/images/lat6.jpg");
-               }
+         }
+         @for $x from 1 to 7 {
+            .lat#{$x} {
+               background-image: url(/src/images/lat#{$x}.jpg);
             }
          }
       }
@@ -194,19 +159,10 @@ article {
                padding: $sizehArticle * 50 $sizehArticle * 25 $sizehArticle * 25;
                font-size: $sizehArticle * 9;
             }
-
-            &:nth-child(2) {
-               background-image: url("/src/images/photo-fact1.jpg");
-            }
-            &:nth-child(3) {
-               background-image: url("/src/images/photo-fact2.jpg");
-            }
-            &:nth-child(4) {
-               background-image: url("/src/images/photo-fact3.jpg");
-            }
-
-            &:nth-child(5) {
-               background-image: url("/src/images/photo-fact4.jpg");
+            @for $i from 1 to 5 {
+               &:nth-child(#{$i + 1}) {
+                  background-image: url(/src/images/photo-fact#{$i}.jpg);
+               }
             }
          }
       }
