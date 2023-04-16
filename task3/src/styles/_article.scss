@@ -7,7 +7,7 @@ $colorArticleB: black;
 $borderBottonR: 2px solid $colorArticleR;
 
 article {
-   width: $container-width;
+   max-width: $container-width;
    margin: auto;
    .top {
       display: flex;

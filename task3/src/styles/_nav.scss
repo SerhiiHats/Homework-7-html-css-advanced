@@ -7,7 +7,7 @@ $fontweight: 600;
 $testBorder: 1px solid tomato;
 
 nav {
-   width: $container-width;
+   max-width: $container-width;
    margin: auto;
    display: flex;
    justify-content: space-between;

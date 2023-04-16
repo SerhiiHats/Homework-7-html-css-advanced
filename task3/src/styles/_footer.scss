@@ -7,7 +7,7 @@ footer {
    color: $colorFooter;
 
    .footer-top {
-      width: $container-width;
+      max-width: $container-width;
       margin: auto;
       display: flex;
       text-align: left;
@@ -35,7 +35,7 @@ footer {
    }
 
    .footer-bottom {
-      width: $container-width;
+      max-width: $container-width;
       margin: auto;
       padding: $sizeFooter * 1.2 0;
       border-top: 1px solid $colorFooter;
